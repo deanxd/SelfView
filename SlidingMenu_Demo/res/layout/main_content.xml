@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- LinearLayout 头 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_bar_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:onClick="onToggle"
+            android:id="@+id/iv_main_content_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/main_back" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/top_bar_divider" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dip"
+            android:text="黑马新闻"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <!-- TextView 内容 -->
+
+    <TextView
+        android:id="@+id/tv_main_content_content"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="内容显示"
+        android:textColor="#000000"
+        android:textSize="25sp" />
+
+</LinearLayout>
